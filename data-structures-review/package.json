@@ -1,0 +1,12 @@
+{
+  "name": "assessment-data-structures-review",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "testem",
+    "grade": "testem ci"
+  },
+  "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
+  "devDependencies": {
+    "testem": "1.6.0"
+  }
+}

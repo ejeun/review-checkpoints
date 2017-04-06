@@ -1,0 +1,31 @@
+{
+  "name": "checkpoint-express-review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test.js",
+    "grade": "mocha --reporter spec --timeout 300 test.js",
+    "db-init": "pg-init checkpoint_express_review",
+    "postinstall": "npm run db-init"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "chance": "^0.7.3",
+    "fs-misc": "^2.0.0",
+    "lodash": "^4.12.0",
+    "mocha": "^2.2.4",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.3",
+    "body-parser": "^1.17.1",
+    "express": "^4.12.3",
+    "express-session": "^1.15.2",
+    "pg": "^4.5.5",
+    "sequelize": "^3.23.3",
+    "volleyball": "^1.4.1"
+  }
+}
